@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VishThoughts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     <!-- Header Section -->
+     <header>
+        <div class="logo">
+            <img src="" alt="V" class="logo-img">
+            <h1>VishThoughts</h1>
+        </div>
+        <p class="owned-by">Owned and Managed by Vishwa</p>
+    </header>
+
+<!-- Navigation Bar -->
+<nav>
+    <ul>
+        <li><a href="javascript:void(0)" onclick="showSection('home')">Home</a></li>
+        <li><a href="javascript:void(0)" onclick="showSection('about')">About Me</a></li>
+        <li><a href="javascript:void(0)" onclick="showSection('articles')">Articles</a></li>
+        <li><a href="javascript:void(0)" onclick="showSection('contact')">Contact</a></li>
+        <li><a href="javascript:void(0)" onclick="showSection('feedback')">Feedback/Rating</a></li>
+    </ul>
+</nav>
+<!-- Home Section -->
+<section id="home" class="section active">
+    <h2>Welcome to VishThoughts</h2>
+    <p> VishThoughts is a personal branding platform designed to showcase the innovative thoughts, ideas, and creativity of Vishwa. The website serves as an interactive space where visitors can connect, explore, and engage with content that reflects the ethos and journey of its creator. With a focus on motivational stories, powerful quotes, and unique insights, VishThoughts aims to inspire individuals to reach their full potential.
+
+        The site offers a visually appealing interface with vibrant colors and stylish fonts to create a delightful browsing experience. From motivational articles to life-changing quotes, every section of the site is crafted to uplift and encourage. Visitors can easily access content on a variety of topics, ranging from personal growth to social impact, leadership, and more.
+        
+        One of the main features of VishThoughts is the interactive feedback system, where users can share their thoughts and rate the content. This helps in understanding what resonates with the audience, enabling continuous improvement and engagement. The feedback and rating section is not only for reflection but also a way to build a supportive community around the ideas shared. The website’s goal is not just to provide information, but to create a lasting impression on each visitor. With a clear focus on user experience, VishThoughts makes it easy for people to reach out, leave feedback, and stay connected. The site is continually updated with fresh content, ensuring that visitors have access to new and valuable information regularly.
+
+        Through this website, Vishwa hopes to inspire, motivate, and bring positive changes to the lives of individuals. VishThoughts is more than just a website; it’s a movement to spread positivity, knowledge, and wisdom to the world.
+        
+    </p>
+</section>
+
+<!-- About Me Section -->
+<section id="about" class="section">
+    <h2>About Me</h2>
+    <div class="about-content">
+        <img src="vishwa.jpg.jpg" alt="Your Photo" class="about-img">
+        <p>Hello! I’m Vishwa, the creator and founder of VishThoughts. I have always believed that every individual has the potential to create something remarkable in this world. With a passion for knowledge, growth, and self-improvement, I started this platform to share my journey and inspire others to reach their fullest potential.
+
+            From a young age, I’ve been intrigued by the power of words, motivation, and leadership. Over the years, I’ve had the privilege of learning from some of the greatest minds in history, including the likes of Dr. APJ Abdul Kalam and Che Guevara, whose teachings and principles have profoundly impacted my life.
+            
+            With a background in [Bachelor of Commerce In Computer Application], I’ve always been keen on exploring different avenues that allow me to connect with people, learn from their experiences, and share valuable insights with the world. Through VishThoughts, I aim to bring together motivational content, thought-provoking articles, and positive stories that encourage others to dream big, think differently, and act with purpose.
+            
+            
+            Apart from my professional endeavors, I am also passionate about EXPLORING THE WORLD and LEARN EVERYTHING, which fuel my creativity and drive. Whether it’s reading, writing, or traveling, I continuously seek new experiences that enrich my knowledge and broaden my perspective.
+
+            VishThoughts is not just a website; it’s a community for individuals who are looking to make a difference in their own lives and the world around them. I believe in the power of collaboration, positive thinking, and collective growth, which is why this platform is all about sharing, learning, and supporting each other.
+            
+            Thank you for visiting my website. I hope my thoughts, articles, and insights inspire you to take action, challenge yourself, and create the life you desire. Let’s grow together!
+            
+            </p>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section id="articles" class="section">
+        <h2>Motivational Quotes</h2>
+        <p>"You have to dream before your dreams can come true." – Abdul Kalam</p>
+        <img src="abdul kalam.jpg" class="author-photo">
+        <p>"The revolution is not an apple that falls when it is ripe. You have to make it fall." – Che Guevara</p>
+        <img src="che guever.jpg" alt="Che Guevara" class="author-photo">
+        <p>"The greatest glory in living lies not in never falling, but in rising every time we fall." – Nelson Mandela</p>
+        <img src="mandela.jpg" alt="Nelson Mandela" class="author-photo">
+        <p>"If one is determined to die for the truth, even a common man can create a history" - Velupillai Prabhakaran</p>
+        <img src="velupillai prabhakaran.jpg" alt="velupillai prabhakaran" class="author-photo">
+        
+    </section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>For any queries, feel free to reach me!</p>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    
+    <!-- Feedback and Rating Section -->
+<section id="feedback" class="section">
+    <h2>Feedback & Rating</h2>
+    <form id="feedbackForm">
+        <!-- Rating Section with Stars -->
+        <label for="rating">Rate Us:</label>
+        <div id="ratingStars">
+            <input type="radio" id="star5" name="rating" value="5"><label for="star5">&#9733;</label>
+            <input type="radio" id="star4" name="rating" value="4"><label for="star4">&#9733;</label>
+            <input type="radio" id="star3" name="rating" value="3"><label for="star3">&#9733;</label>
+            <input type="radio" id="star2" name="rating" value="2"><label for="star2">&#9733;</label>
+            <input type="radio" id="star1" name="rating" value="1"><label for="star1">&#9733;</label>
+        </div>
+        <textarea id="feedbackText" placeholder="Your feedback..." required></textarea>
+        <button type="submit" id="submitFeedback">Submit Feedback</button>
+    </form>
+
+    <!-- Thank you message -->
+    <div id="thankYouMessage" class="thank-you-message" style="display: none;">
+        <p>Thanks for your Valuable Rating and Feedback!</p>
+    </div>
+
+    <!-- Displaying the Rating and Feedback -->
+    <div id="userFeedback" class="user-feedback" style="display: none;">
+        <h3>Your Submitted Feedback:</h3>
+        <p id="userRating"></p>
+        <p id="userFeedbackText"></p>
+    </div>
+</section>
+    
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 VishThoughts. All Rights Reserved.</p>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
